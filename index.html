@@ -1,175 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Flexbox dashboard layout</title>
-
-  <style type="text/css">
-    
-    /* layout */
-    /* -------------------------------------------- */
-
-    * {
-      box-sizing: border-box
-    }
-
-    body {
-      margin: 0;
-      background-color: #fafafa;
-      font-family: 'Arial', 'sans serif';
-      color: #c5c8cc
-    }
-
-    .demo-section {
-      margin: 4rem 1rem
-    }
-
-    header {
-      text-align: center;
-      text-transform: uppercase
-    }
-
-    /* Debug  */
-    /* -------------------------------------------- */
-
-/*    .flex-container--row > .flex-item {
-      outline: 1px solid red
-    }
-
-    .flex-container--col > .flex-item {
-      outline: 1px solid blue
-    }*/
-
-
-    /* flex containers which contain boxes in a row */
-    /* -------------------------------------------- */
-
-    .flex-container {
-      display: flex
-    }
-    
-    .flex-container--row {
-      flex-direction: row;
-    }
-
-    .flex-container--row + .flex-container--row {
-      margin-top: 1rem
-    }
-
-    .flex-container--row > *:not(:first-child) {
-      margin-left: .5rem
-    }
-
-    .flex-container--row > *:not(:last-child) {
-      margin-right: .5rem
-    }
-    
-
-    /* flex columns which have rows nested inside them */
-    /* ----------------------------------------------- */
-
-    .flex-container--col {
-      flex-direction: column;
-      height: 100%
-    }
-
-    .flex-container--col > *:not(:first-child) {
-      margin-top: .5rem
-    }
-
-    .flex-container--col > *:not(:last-child) {
-      margin-bottom: .5rem
-    }
-    
-
-    /* flex items themselves */
-    /* --------------------- */
-
-    /* max width is here because I think IE needs the max-width set - it doesn't 
-    listen to flex-basis properly, apparently */
-
-    .flex-container--row > .flex-item--half {
-      max-width: 50%;
-      flex: 1 1 50%;
-    }
-
-    .flex-container--row > .flex-item--onequarter {
-      max-width: 25%;
-      flex: 1 1 25%;
-    }
-
-    .flex-container--row > .flex-item--threequarter {
-      max-width: 75%;
-      flex: 1 1 75%;
-    }
-
-    .flex-container--row > .flex-item--onethird {
-      max-width: 33.33333333%;
-      flex: 1 1 33.3333333%;
-    }
-
-    .flex-container--row > .flex-item--twothird {
-      max-width: 66.66666666%;
-      flex: 1 1 66.6666666%;
-    }
-
-    .flex-container--row > .flex-item--golden-lrg {
-      max-width: 62%;
-      flex: 1 1 62%;
-    }
-
-    .flex-container--row > .flex-item--golden-sml {
-      max-width: 38%;
-      flex: 1 1 38%;
-    }
-
-    /* omitting the max width because width is not needed when flex-direction column is used */
-    .flex-container--col > .flex-item--half {
-      flex: 1 1 auto;
-      height: 50%
-    }
-
-    .flex-container--col > .flex-item--onequarter {
-      flex: 1 1 auto;
-      height: 25%
-    }
-
-    .flex-container--col > .flex-item--onethird {
-      flex: 1 1 auto;
-      height: 33.3333333%
-    }
-
-    .flex-container--col > .flex-item--twothird {
-      flex: 1 1 auto;
-      height: 66.666666%
-    }
-
-    .flex-container--col > .flex-item--golden-lrg {
-      flex: 1 1 auto;
-      height: 62%
-    }
-
-    .flex-container--col > .flex-item--golden-sml {
-      flex: 1 1 auto;
-      height: 38%
-    }
-
-    
-    /* what holds the content */
-    /* ---------------------- */ 
-    .content {
-      background-color: rgba(255, 255, 255, .8);
-      padding: 1rem;
-      border: 1px solid #e3e6ec;
-      height: 100%;
-      min-height: 120px;
-      border-radius: 3px;
-      text-align: center;
-    }
-
-  </style>
-
-
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
 
     <header><h1>Flexbox dashboard layout</h1></header>
@@ -646,6 +482,8 @@
     //cols.classList.add("js-col");
 
   </script>
+
+  <script type="text/javascript" src="script.js"></script>
 
 
 </body>
