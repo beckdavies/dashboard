@@ -160,3 +160,15 @@
       border-radius: 3px;
       text-align: center;
     }
+
+    .footer {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .footer__link {
+      text-decoration: none;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem
+    }
