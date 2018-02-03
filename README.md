@@ -4,7 +4,7 @@ http://beckdavi.es/flex-dashboard/
 
 Uses flexbox to create a layout for a dashboard, with a variety of columns in full, half, third, quarter and golden ratio widths. The columns contain one level of rows.
 
-The directory is launched in a new tab Firefox Developer Edition on port 7777. Firefox Developer Edition (at the time of writing) has the best dev tools for debugging grid layout.
+The directory is launched in a new tab Google Chrome on port 7777.
 
 To change the browser or the port, look in the scripts section in packages.json and change the values for the browser and the port that you'll find in there.
 

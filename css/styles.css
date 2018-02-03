@@ -18,6 +18,47 @@
       margin: 4rem 1rem
     }
 
+    .buttons {
+      position: fixed;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      top: 3rem;
+    }
+
+    .button {
+      border: 0;
+      font-size: 1rem;
+      padding: 1rem;
+      border-radius: 3px;
+      color: white;
+      padding: .5rem .75rem;
+    }
+
+    .button--rows {
+      background-color: #9e99e2
+    }
+
+    .button--cols {
+      background-color: #c00132
+    }
+
+    .button--items {
+      background-color: #1de;
+    }
+    
+    .show-row {
+      outline: 2px dashed #9e99e2
+    }
+
+    .show-col {
+      outline: 2px dashed #c00132
+    }
+
+    .show-item {
+      outline: 2px dashed #1de;
+    }
+
     header {
       text-align: center;
       text-transform: uppercase
