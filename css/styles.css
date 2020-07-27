@@ -11,7 +11,7 @@
       margin: 0;
       background-color: #fafafa;
       font-family: 'Arial', 'sans serif';
-      color: #c5c8cc
+      color: #aaa
     }
 
     .demo-section {
@@ -28,11 +28,11 @@
 
     .button {
       border: 0;
-      font-size: 1rem;
-      padding: 1rem;
-      border-radius: 3px;
+      font-size: 1rem;;
+      padding: .75rem 1rem;
+      border-radius: 2px;
       color: white;
-      padding: .5rem .75rem;
+      cursor: pointer;
     }
 
     .button--rows {
@@ -44,7 +44,7 @@
     }
 
     .button--items {
-      background-color: #1de;
+      background-color: #0555a0;
     }
     
     .show-row {
@@ -56,7 +56,7 @@
     }
 
     .show-item {
-      outline: 2px dashed #1de;
+      outline: 2px dashed #0555a0;
     }
 
     header {
@@ -98,6 +98,8 @@
     .flex-container--row > *:not(:last-child) {
       margin-right: .5rem
     }
+
+
     
 
     /* flex columns which have rows nested inside them */
@@ -195,7 +197,7 @@
     .content {
       background-color: rgba(255, 255, 255, .8);
       padding: 1rem;
-      border: 1px solid #e3e6ec;
+      border: 1px solid #aaa;
       height: 100%;
       min-height: 120px;
       border-radius: 3px;
@@ -212,4 +214,30 @@
       display: inline-block;
       width: 2rem;
       height: 2rem
+    }
+
+    @media (max-width: 768px) {
+      .flex-container--row {
+        flex-direction: column;
+      }
+
+      .flex-container--row > *:not(:first-child),
+      .flex-container--row > *:not(:last-child) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .flex-container--row > .flex-item + .flex-item {
+        margin-top: 1rem
+      }
+
+      .flex-container--row > .flex-item--half,
+      .flex-container--row > .flex-item--onequarter,
+      .flex-container--row > .flex-item--onethird,
+      .flex-container--row > .flex-item--twothird,
+      .flex-container--row > .flex-item--threequarter,
+      .flex-container--row > .flex-item--golden-lrg,
+      .flex-container--row > .flex-item--golden-sml {
+        max-width: none;
+      }
     }
